@@ -12,7 +12,7 @@
 
 
 This project presents a deep learning–based Traffic Sign Recognition (TSR) system using a
-Convolutional Neural Network (CNN) trained on the [German Traffic Sign Recognition Dataset (GTSRB)](http://benchmark.ini.rub.de/index.php?section=gtsrb&subsection=about) dataset.
+Convolutional Neural Network (CNN) trained on the [German Traffic Sign Recognition Dataset (GTSRB)](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign) dataset.
 
 The project uses the German Traffic Sign Recognition Benchmark (GTSRB) dataset, a well-
 established benchmark for traffic sign classification tasks.
