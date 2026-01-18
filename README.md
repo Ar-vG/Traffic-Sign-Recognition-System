@@ -38,6 +38,6 @@ The model used in the notebook is a **Sequential Convolutional Neural Network (C
 
 The final model achieved:
 
-Overall Test Accuracy: 96.86%
+Overall Test Accuracy: 95.22%
 
 This demonstrates strong performance on unseen images.
