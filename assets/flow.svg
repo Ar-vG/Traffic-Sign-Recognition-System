@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-label="Traffic Sign Recognition app flow diagram">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10243a"/>
+      <stop offset="100%" stop-color="#0a1726"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2bd6c4"/>
+      <stop offset="100%" stop-color="#13b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="760" rx="36" fill="#07111c"/>
+  <rect x="48" y="48" width="1304" height="664" rx="28" fill="url(#panel)" stroke="#1f3b57"/>
+  <text x="82" y="108" fill="#f0f7ff" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">Application Flow</text>
+  <text x="82" y="146" fill="#acc5dc" font-family="Segoe UI, Arial, sans-serif" font-size="18">From upload or webcam frame to predicted traffic sign label</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="90" y="210" width="260" height="160" rx="22" fill="#0e2740" stroke="#2a4b68"/>
+    <text x="120" y="255" fill="#2bd6c4" font-size="20" font-weight="700">Input image</text>
+    <text x="120" y="292" fill="#f0f7ff" font-size="18">Upload in Flask UI</text>
+    <text x="120" y="322" fill="#acc5dc" font-size="16">or capture from webcam</text>
+
+    <rect x="430" y="210" width="260" height="160" rx="22" fill="#0e2740" stroke="#2a4b68"/>
+    <text x="460" y="255" fill="#2bd6c4" font-size="20" font-weight="700">Preprocess</text>
+    <text x="460" y="292" fill="#f0f7ff" font-size="18">Resize to 30×30</text>
+    <text x="460" y="322" fill="#acc5dc" font-size="16">Normalize RGB pixels</text>
+
+    <rect x="770" y="210" width="260" height="160" rx="22" fill="#0e2740" stroke="#2a4b68"/>
+    <text x="800" y="255" fill="#2bd6c4" font-size="20" font-weight="700">Model inference</text>
+    <text x="800" y="292" fill="#f0f7ff" font-size="18">traffic_model.keras</text>
+    <text x="800" y="322" fill="#acc5dc" font-size="16">Softmax class prediction</text>
+
+    <rect x="1110" y="210" width="210" height="160" rx="22" fill="#0e2740" stroke="#2a4b68"/>
+    <text x="1140" y="255" fill="#2bd6c4" font-size="20" font-weight="700">Label output</text>
+    <text x="1140" y="292" fill="#f0f7ff" font-size="18">Class ID + name</text>
+    <text x="1140" y="322" fill="#acc5dc" font-size="16">Shown in UI</text>
+  </g>
+
+  <g stroke="url(#accent)" stroke-width="10" stroke-linecap="round" fill="none">
+    <path d="M350 290H420"/>
+    <path d="M690 290H760"/>
+    <path d="M1030 290H1100"/>
+  </g>
+  <g fill="#2bd6c4">
+    <path d="M420 290l-26-16v32z"/>
+    <path d="M760 290l-26-16v32z"/>
+    <path d="M1100 290l-26-16v32z"/>
+  </g>
+
+  <rect x="90" y="450" width="1230" height="180" rx="22" fill="#081421" stroke="#1f3b57"/>
+  <text x="120" y="500" fill="#f0f7ff" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">Included in this GitHub version</text>
+  <text x="120" y="540" fill="#acc5dc" font-family="Segoe UI, Arial, sans-serif" font-size="18">app.py, realtime.py, templates/index.html, and the trained model file</text>
+  <text x="120" y="574" fill="#acc5dc" font-family="Segoe UI, Arial, sans-serif" font-size="18">Training data and extra exports were intentionally removed to keep the repo cleaner</text>
+</svg>

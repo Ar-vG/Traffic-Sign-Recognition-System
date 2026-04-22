@@ -1,4 +1,14 @@
-# Traffic-Sign-Recognition-System
+# Traffic Sign Recognition System
+
+A deep learning based Traffic Sign Recognition project with a compact Flask app and realtime webcam inference.
+
+![Project Banner](assets/banner.svg)
+
+## Dataset and model context
+
+This work is based on the German Traffic Sign Recognition Benchmark dataset and uses a CNN approach for 43-class classification.
+
+Reference samples:
 
 ![](http://benchmark.ini.rub.de/Images/gtsrb/0.png)
 ![](http://benchmark.ini.rub.de/Images/gtsrb/1.png)
@@ -10,34 +20,44 @@
 ![](http://benchmark.ini.rub.de/Images/gtsrb/11.png)
 ![](http://benchmark.ini.rub.de/Images/gtsrb/8.png)
 
+## What is included in this cleaned repo
 
-This project presents a deep learning–based Traffic Sign Recognition (TSR) system using a
-Convolutional Neural Network (CNN) trained on the [German Traffic Sign Recognition Dataset (GTSRB)](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign) dataset.
+- app.py for the Flask web app
+- realtime.py for webcam based live detection
+- traffic_model.keras for inference
+- templates/index.html for the frontend
+- assets/banner.svg and assets/flow.svg for README visuals
 
-The project uses the German Traffic Sign Recognition Benchmark (GTSRB) dataset, a well-
-established benchmark for traffic sign classification tasks.
+## Preview
 
-Dataset Summary
+![App Flow](assets/flow.svg)
 
-● Total images: ~50,000
+## Run locally
 
-● Number of classes: 43
+1. Create and activate a Python environment.
+2. Install packages:
 
-● Image type: RGB
+```bash
+pip install flask tensorflow opencv-python numpy
+```
 
-● Image dimensions: 15×15 to 250×250 (varied)
+3. Start the web app:
 
-● Task: Multi-class classification
+```bash
+python app.py
+```
 
+4. Open the local URL shown in the terminal.
 
+## Realtime mode
 
-The model used in the notebook is a **Sequential Convolutional Neural Network (CNN)** built using the Keras library (TensorFlow backend).
+```bash
+python realtime.py
+```
 
+Press q to exit the camera window.
 
+## Notes
 
-
-The final model achieved:
-
-Overall Test Accuracy: 95.22%
-
-This demonstrates strong performance on unseen images.
+- This GitHub version is intentionally trimmed to runtime files.
+- Training data and extra model exports were removed from this copy.
