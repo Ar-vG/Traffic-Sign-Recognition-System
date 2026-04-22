@@ -2,8 +2,6 @@
 
 A deep learning based Traffic Sign Recognition project with a compact Flask app and realtime webcam inference.
 
-![Project Banner](assets/banner.svg)
-
 ## Dataset and model context
 
 This work is based on the German Traffic Sign Recognition Benchmark dataset and uses a CNN approach for 43-class classification.
