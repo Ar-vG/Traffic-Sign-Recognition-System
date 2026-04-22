@@ -18,13 +18,13 @@ Reference samples:
 ![](http://benchmark.ini.rub.de/Images/gtsrb/11.png)
 ![](http://benchmark.ini.rub.de/Images/gtsrb/8.png)
 
-## What is included in this cleaned repo
+## What is included in this repo
 
 - app.py for the Flask web app
 - realtime.py for webcam based live detection
 - traffic_model.keras for inference
 - templates/index.html for the frontend
-- assets/banner.svg and assets/flow.svg for README visuals
+- A CNN based algorithm with an overall accuracy of **99.80%**
 
 ## Preview
 
